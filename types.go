@@ -1530,10 +1530,10 @@ type StorageDownloadURLOptions struct {
 }
 
 type StorageContent struct {
-	Format       string `json:"format,omitempty"`
-	Size         uint64 `json:"size,omitempty"`
-	Volid        string `json:"volid,omitempty"`
-	Ctime        uint64 `json:"ctime,omitempty"`
+	Format string `json:"format,omitempty"`
+	Size   uint64 `json:"size,omitempty"`
+	Volid  string `json:"volid,omitempty"`
+	// Ctime        uint64 `json:"ctime,omitempty"`
 	Encryption   string `json:"encryption,omitempty"`
 	Notes        string `json:"notes,omitempty"`
 	Parent       string `json:"parent,omitempty"`
