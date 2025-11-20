@@ -29,7 +29,7 @@ func (c *Client) CreateSession(ctx context.Context) error {
 	c.sessionMux.Lock()
 	defer c.sessionMux.Unlock()
 
-	if c.session != nil {
+	if c.session != nil && c.session.Username != "root@pam" {
 		return ErrSessionExists
 	}
 
